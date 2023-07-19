@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@font-face {
+    font-family: "CloudStorm";
+    src: url("/fonts/Cloudstorm-lJX0.ttf");
+    font-display: swap;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply bg-sky-50 dark:bg-sky-300 m-0 p-0 dark:text-white text-black scroll-smooth;
+}
+
+h1 {
+    @apply font-bold lg:text-8xl sm:text-6xl text-4xl;
+    font-family: "Josefin Sans", sans-serif;
+}
+h2 {
+    @apply md:text-xl text-base font-mono leading-4;
+}
+h3 {
+    @apply text-white font-bold lg:text-[90%] md:text-[80%] sm:text-[70%] text-[60%] tracking-tight;
+}
+
+@layer base {
+    .cloud {
+        @apply cursor-pointer select-none sm:w-[10%] w-[15%] absolute dark:invert dark:hue-rotate-60;
+    }
+
+    .heroText {
+        @apply cursor-pointer lg:text-4xl lg:-mt-0 md:text-2xl md:-mt-5 sm:text-xl sm:-mt-10 text-offwhite font-bold drop-shadow-md tracking-wider transition hover:brightness-125 dark:text-gray-300 dark:hue-rotate-180;
+        font-family: CloudStorm;
+    }
 }
