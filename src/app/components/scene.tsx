@@ -22,7 +22,7 @@ export default function Scene({
         Camera(scrollY, Sections);
 
     useFrame((state: any) => {
-        scrollY.set(data.scroll.current);
+        scrollY.set(data.offset);
         // console.log(data.scroll.current);
         state.camera.lookAt(0, cameraLookAtY.get(), cameraLookAtZ.get());
     });
