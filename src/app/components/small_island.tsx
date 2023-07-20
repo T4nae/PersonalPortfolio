@@ -11,6 +11,7 @@ import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { createPositions, createPosition } from "@/lib/positions";
 import { SmallIslandPos } from "@/motion/config";
+import { A11y } from "@react-three/a11y";
 
 const Island = ({
     position,
@@ -43,14 +44,16 @@ const Island = ({
 
     return tech.title !== "" ? (
         <Float floatIntensity={2} rotationIntensity={0.1}>
-            <motion.group
-                scale={Scale}
-                rotation={[rotation[0], rotation[1], rotation[2]]}
-                position={[posX, posY, posZ]}
-            >
-                <primitive object={copiedScene} />
-                <Technology tech={tech} scaleTech={scaleTech} />
-            </motion.group>
+            <A11y role="content" description={tech.title}>
+                <motion.group
+                    scale={Scale}
+                    rotation={[rotation[0], rotation[1], rotation[2]]}
+                    position={[posX, posY, posZ]}
+                >
+                    <primitive object={copiedScene} />
+                    <Technology tech={tech} scaleTech={scaleTech} />
+                </motion.group>
+            </A11y>
         </Float>
     ) : null;
 };
@@ -63,7 +66,7 @@ export default function SmallIslands({
 
     const radius = isTab ? 30 : isMobile ? 20 : 45;
     const center = {
-        x: isTab ? -10 : isMobile ? -5 : -15,
+        x: isTab ? -10 : isMobile ? 0 : -15,
         y: isTab ? 3 : isMobile ? 5 : 0,
         z: 0,
     };
