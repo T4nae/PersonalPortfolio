@@ -20,8 +20,16 @@ export const createPosition = (
     numPoints: number
 ) => {
     const points: number[][] = [];
-    for (let i = 0; i < numPoints; i++) {
-        const angle = (i / (numPoints - 1)) * Math.PI;
+    const Cpoints: number = 12;
+    for (let i = 0; i < numPoints - Cpoints; i++) {
+        const x = -60;
+        const y = 0;
+        const z = -60;
+        const point = [x, y, z];
+        points.push(point);
+    }
+    for (let i = 0; i < Cpoints; i++) {
+        const angle = (i / (Cpoints - 1)) * Math.PI;
         const x = center.x + radius * Math.sin(angle);
         const y = center.y + (radius / 6) * Math.cos(angle);
         const z = center.z - radius * Math.cos(angle);
