@@ -1,12 +1,19 @@
 import { Tech } from "../../types";
 import { MotionValue } from "framer-motion";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader";
-import { MeshBasicMaterial, ExtrudeGeometry, Mesh, Group } from "three";
+import {
+    MeshBasicMaterial,
+    ExtrudeGeometry,
+    Mesh,
+    Group,
+    Material,
+} from "three";
 import { useMemo } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader } from "@react-three/fiber";
 import { motion } from "framer-motion-3d";
 import { Text3D } from "@react-three/drei";
+import { A11y, useA11y } from "@react-three/a11y";
 
 export default function Technology({
     tech,
@@ -57,6 +64,7 @@ export default function Technology({
     topBar.material = new MeshBasicMaterial({
         color: tech.color,
     });
+
     return (
         <>
             <primitive
@@ -79,17 +87,31 @@ export default function Technology({
                 material={bottomBar.material}
                 rotation={[Math.PI / 2 + 0.2, 0, Math.PI / 2]}
             />
-            <motion.group>
-                <Text3D
-                    rotation={[-1, 0, 0]}
-                    position={[-6, 1.5, 3.15]}
-                    scale={[1, 1, 2]}
-                    size={0.6}
-                    font={"./fonts/Roboto_Regular.json"}
-                >
-                    {tech.title}
-                </Text3D>
-            </motion.group>
+            <Text3D
+                rotation={[-1, 0, 0]}
+                position={[-6, 1.5, 3.15]}
+                scale={[1, 1, 2]}
+                size={0.6}
+                font={"./fonts/Roboto_Regular.json"}
+            >
+                {tech.title}
+            </Text3D>
+            <Percent level={tech.level} />
         </>
     );
 }
+
+const Percent = ({ level }: { level: number }) => {
+    const a11y = useA11y();
+    return (
+        <Text3D
+            rotation={[-1, 0, 0]}
+            position={[2.8, a11y.hover ? 1.5 : 0, 3.15]}
+            scale={[1, 1, 2]}
+            size={0.4}
+            font={"./fonts/Roboto_Regular.json"}
+        >
+            {level}%
+        </Text3D>
+    );
+};
