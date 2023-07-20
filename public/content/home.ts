@@ -1,4 +1,3 @@
-import References from "../../src/app/components/references";
 const home = {
     title: "Tanyam's Portfolio",
     description: "Portfolio Website made by Tanyam Baweja",
