@@ -13,6 +13,7 @@ import { A11yAnnouncer } from "@react-three/a11y";
 import home from "../../public/content/home";
 import Loader from "./components/loader";
 import References from "./components/references";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function HomePage() {
     const { DarkMode, setDarkMode } = useDarkMode();
@@ -90,6 +91,7 @@ export default function HomePage() {
                 </Canvas>
                 <A11yAnnouncer />
             </Suspense>
+            <Analytics />
         </>
     );
 }
