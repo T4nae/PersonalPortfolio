@@ -62,10 +62,7 @@ export default function HomePage() {
     return (
         <>
             <Suspense fallback={<Loader />}>
-                <Canvas
-                    frameloop="demand"
-                    style={{ background: DarkMode ? "#0B2447" : "#7DE5ED" }}
-                >
+                <Canvas frameloop="demand">
                     <ScrollControls pages={Pages}>
                         <Scene
                             Pages={Pages}
