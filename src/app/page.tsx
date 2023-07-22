@@ -13,7 +13,7 @@ import { A11yAnnouncer } from "@react-three/a11y";
 import home from "../../public/content/home";
 import Loader from "./components/loader";
 import References from "./components/references";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function HomePage() {
     const { DarkMode, setDarkMode } = useDarkMode();
@@ -62,7 +62,10 @@ export default function HomePage() {
     return (
         <>
             <Suspense fallback={<Loader />}>
-                <Canvas frameloop="demand">
+                <Canvas
+                    frameloop="demand"
+                    style={{ background: DarkMode ? "#0B2447" : "#7DE5ED" }}
+                >
                     <ScrollControls pages={Pages}>
                         <Scene
                             Pages={Pages}
