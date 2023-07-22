@@ -6,9 +6,9 @@ export default function Loader() {
     const progressPercent = parseInt(progress.toFixed(10)) / 100;
 
     return (
-        <div className="w-screen overflow-hidden">
+        <div className="w-screen h-screen bg-sky-50 dark:bg-sky-300 overflow-hidden">
             <h1 className="text-center text-4xl font-bold mt-[25%]">
-                Loading...
+                Launching Interactive Website
             </h1>
             <motion.section className="relative w-[80%] h-4 rounded-xl bg-gray-200 mt-5 mx-auto">
                 <motion.section
@@ -19,6 +19,13 @@ export default function Loader() {
                         originX: 0,
                     }}
                 />
+                <section className="flex font-mono">
+                    <p className="text-bold">Tip-</p>
+                    <p>
+                        &nbsp;Give a try to scrolling, hovering, and clicking on
+                        various elements.
+                    </p>
+                </section>
             </motion.section>
         </div>
     );
