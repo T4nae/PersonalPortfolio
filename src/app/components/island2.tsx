@@ -26,11 +26,11 @@ function Scene({ Section, scrollY }: Section & scrollOffset) {
         "/models/floating_island2/screen.glb"
     ).scene.children[0] as Mesh;
     const [roughnessMap, normalMap, map, displacementMap, aoMap] = useTexture([
-        "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/materials/stylized-crystal/Stylized_Crystal_001_roughness.jpg",
-        "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/materials/stylized-crystal/Stylized_Crystal_001_normal.jpg",
-        "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/materials/stylized-crystal/Stylized_Crystal_001_basecolor.jpg",
-        "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/materials/stylized-crystal/Stylized_Crystal_001_height.png",
-        "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/materials/stylized-crystal/Stylized_Crystal_001_ambientOcclusion.jpg",
+        "textures/Stylized_Crystal_001_roughness.jpg",
+        "textures/Stylized_Crystal_001_normal.jpg",
+        "textures/Stylized_Crystal_001_basecolor.jpg",
+        "textures/Stylized_Crystal_001_height.png",
+        "textures/Stylized_Crystal_001_ambientOcclusion.jpg",
     ]);
     const { isMobile, isTab } = useScreen();
     const { posY, posZ, rot } = Island2Pos(scrollY, Section);
