@@ -33,3 +33,19 @@ type Tech = {
         level: number;
     };
 };
+
+type caseStudy = {
+    title: string;
+    image: string;
+    badges: {
+        icon: string;
+        name: string;
+        color: string;
+        textColor?: string;
+    }[];
+    content: {
+        title?: string;
+        text?: string;
+        image?: { url: string; size?: number; centered?: boolean };
+    }[];
+}[];
