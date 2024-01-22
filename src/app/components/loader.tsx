@@ -1,5 +1,6 @@
 import { useProgress } from "@react-three/drei";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Loader() {
     const { progress } = useProgress();
@@ -26,6 +27,9 @@ export default function Loader() {
                         various elements.
                     </p>
                 </section>
+                <Link className="text-blue-500" href="/static.html">
+                    Try static version of site if gotten stuck
+                </Link>
             </motion.section>
         </div>
     );

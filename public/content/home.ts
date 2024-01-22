@@ -45,7 +45,7 @@ const home = {
             },
             {
                 title: "Java",
-                icon: "eclipseadoptium",
+                icon: "openjdk",
                 color: "#FF1464",
                 level: 65,
             },
