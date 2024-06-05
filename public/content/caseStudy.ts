@@ -139,4 +139,55 @@ export const CaseStudy: caseStudy = [
             },
         ],
     },
+    {
+        title: "PinSightful",
+        image: "https://gist.github.com/assets/51880648/fbc24429-e714-413d-b313-aa949bf8e65b.png",
+        badges: [
+            {
+                icon: "nextdotjs",
+                name: "NextJS",
+                color: "#fff",
+                textColor: "#000",
+            },
+            { icon: "react", name: "React", color: "#61DAFB" },
+            { icon: "typescript", name: "TypeScript", color: "#007ACC" },
+            { icon: "tailwindcss", name: "TailwindCSS", color: "#38B2AC" },
+            {
+                icon: "vercel",
+                name: "Vercel",
+                color: "#fff",
+                textColor: "#000",
+            },
+        ],
+        content: [
+            {
+                title: "PinSightful: Revolutionizing Research with AI-Powered Pinboards",
+                text: "In the ever-evolving landscape of research and knowledge acquisition, PinSightful emerges as a game-changing solution that harnesses the power of cutting-edge AI technologies to streamline and enhance the research process. Inspired by the need for a comprehensive and intuitive platform, PinSightful aims to empower researchers, learners, and knowledge workers with a pinboard-style visualization tool that seamlessly integrates AI capabilities, leveraging the power of frameworks like Next.js, Express.js, and React.",
+                image: {
+                    url: "https://gist.github.com/assets/51880648/1c54a0eb-bd5a-4777-a2ca-0e39017e6915.png",
+                    size: 50,
+                    centered: false,
+                },
+            },
+            {
+                text: "At its core, PinSightful combines the familiarity of traditional pinboards with cutting-edge AI technologies. Researchers can create pinboards, organize their notes, and curate a wealth of information from various sources, including text, media, and external links. However, PinSightful goes beyond mere organization by harnessing the power of AI models like OpenAI's GPT and Ollama for content generation, and summarization all seamlessly integrated through the Langchain library.",
+            },
+            {
+                title: "AI Integration: Empowering Research Excellence",
+                text: "One of the key features of PinSightful is its AI integration, which enables users to leverage AI models for tasks such as web scraping, information retrieval, and content summarization. With a deep integration of AI capabilities, researchers can effortlessly gather relevant data from the web, summarize lengthy articles or documents, and gain valuable insights through AI. This powerful combination of AI and pinboard visualization streamlines the research process, saving time and effort while enhancing the quality and depth of insights.",
+            },
+            {
+                title: "Tailored for Researchers, Learners, and Knowledge Workers",
+                text: "PinSightful's target audience includes researchers, learners, and knowledge workers across various domains. Whether conducting academic research, curating course materials, or exploring new subjects, PinSightful provides a versatile platform to organize and synthesize information effectively. Leveraging technologies like Clerk for secure user authentication, MongoDB for flexible data management, and Tailwind UI for a responsive and aesthetic user experience, PinSightful caters to the diverse needs of its user base.",
+            },
+            {
+                title: "Overcoming Challenges, Achieving Success",
+                text: "While the development of PinSightful presented its fair share of challenges, I persevered through obstacles such as implementing canvas-based pinboards, handling real-time rendering and updates, integrating AI models like GPT and Llama, and crafting an intuitive user interface. Despite these hurdles, the project has achieved remarkable success, garnering positive feedback from users who have experienced the power of AI-enhanced research and knowledge curation.",
+            },
+            {
+                title: "The Future of AI-Powered Research",
+                text: "PinSightful was conceived as a personal project during my full-stack minor program at the university. As an aspiring full-stack developer, this project allowed me to showcase my skills and knowledge in modern web technologies. Leveraging cutting-edge frameworks like Next.js, Express.js, and React, along with a robust database like MongoDB, PinSightful demonstrated my proficiency in building scalable and feature-rich web applications.",
+            },
+        ],
+    },
 ];

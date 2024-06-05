@@ -133,6 +133,14 @@ const home = {
                 preview:
                     "https://user-images.githubusercontent.com/51880648/254550020-75776193-24a2-4ca7-9827-8a6efa266bf5.mp4",
             },
+            {
+                title: "PinSightful",
+                description:
+                    "CaseStudy about website PinSightful is an AI-enhanced web application that provides a pinboard-style visualization platform for researchers, educators, and knowledge workers to organize, curate, and share research materials, integrating AI models for content generation, summarization, and analysis.",
+                image: "https://gist.github.com/assets/51880648/fbc24429-e714-413d-b313-aa949bf8e65b.png",
+                preview:
+                    "https://gist.github.com/assets/51880648/ec62827d-c3e8-437c-880e-eccd781a043a.mp4",
+            },
         ],
         Testimonials: [
             {
