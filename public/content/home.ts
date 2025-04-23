@@ -3,7 +3,7 @@ const home = {
     description: "Portfolio Website made by Tanyam Baweja",
     path: "/home",
     HeroText: [
-        ["H", "i", ", ", "I", "m"],
+        ["G", "R", "E", "E", "T", "I", "N", "G", "S", ",", "I", "m"],
         ["T", "a", "n", "y", "a", "m"],
         ["B", "a", "w", "e", "j", "a"],
     ],
