@@ -3,33 +3,40 @@ const home = {
     description: "Portfolio Website made by Tanyam Baweja",
     path: "/home",
     HeroText: [
-        ["G", "R", "E", "E", "T", "I", "N", "G", "S", ",", "I", "m"],
+        ["H", "i", ",", "I", "m"],
         ["T", "a", "n", "y", "a", "m"],
         ["B", "a", "w", "e", "j", "a"],
     ],
     overview: {
         title: ["O", "v", "e", "r", "V", "i", "e", "w"],
         description:
-            " I am a Full Stack Web Developer with hands-on experience building web applications and services from scratch," +
-            " I have a proven track record of delivering top-quality projects for a wide range of use cases. With a strong foundation in",
+            " I am a Full Stack Software Developer with extensive experience in modern web technologies and AI-powered applications." +
+            " I have a proven track record of delivering high-quality e-commerce platforms, automation tools, and AI-enhanced web applications." +
+            " With strong expertise in both frontend and backend development, I specialize in creating scalable solutions with",
         languages: [
             {
                 title: "TypeScript",
                 icon: "typescript",
                 color: "#3178C6",
-                level: 80,
+                level: 90,
             },
             {
                 title: "JavaScript",
                 icon: "javascript",
                 color: "#F7DF1E",
-                level: 90,
+                level: 95,
             },
             {
                 title: "Python",
                 icon: "python",
                 color: "#3776AB",
-                level: 90,
+                level: 85,
+            },
+            {
+                title: "Java",
+                icon: "openjdk",
+                color: "#FF1464",
+                level: 80,
             },
             {
                 title: "C",
@@ -41,13 +48,13 @@ const home = {
                 title: "C++",
                 icon: "cplusplus",
                 color: "#00599C",
-                level: 65,
+                level: 75,
             },
             {
-                title: "Java",
-                icon: "openjdk",
-                color: "#FF1464",
-                level: 65,
+                title: "SQL",
+                icon: "postgresql",
+                color: "#4169E1",
+                level: 80,
             },
             {
                 title: "HTML",
@@ -67,15 +74,27 @@ const home = {
                 title: "Visual Studio Code",
                 icon: "visualstudiocode",
                 color: "#007ACC",
-                level: 90,
+                level: 95,
             },
             {
-                title: "Eclipse IDE",
-                icon: "eclipseide",
-                color: "#2C2255",
-                level: 70,
+                title: "PyCharm",
+                icon: "pycharm",
+                color: "#000000",
+                level: 85,
             },
-            { title: "Figma", icon: "figma", color: "#F24E1E", level: 70 },
+            {
+                title: "IntelliJ IDEA",
+                icon: "intellijidea",
+                color: "#000000",
+                level: 80,
+            },
+            {
+                title: "Visual Studio",
+                icon: "visualstudio",
+                color: "#5C2D91",
+                level: 75,
+            },
+            { title: "Figma", icon: "figma", color: "#F24E1E", level: 80 },
             {
                 title: "Adobe Illustrator",
                 icon: "adobeillustrator",
@@ -83,37 +102,37 @@ const home = {
                 level: 85,
             },
             {
-                title: "Adobe PhotoShop",
-                icon: "adobephotoshop",
-                color: "#31A8FF",
-                level: 80,
+                title: "Docker",
+                icon: "docker",
+                color: "#2496ED",
+                level: 75,
             },
-            { title: "Blender", icon: "blender", color: "#F5792A", level: 60 },
+            { title: "Git", icon: "git", color: "#F05032", level: 90 },
         ],
     },
     Technologies: [
-        { title: "Git", icon: "git", color: "#F05032", level: 80 },
-        { title: "Docker", icon: "docker", color: "#2496ED", level: 65 },
-        {
-            title: "PostgreSQL",
-            icon: "postgresql",
-            color: "#4169E1",
-            level: 70,
-        },
-        { title: "MongoDB", icon: "mongodb", color: "#47A248", level: 75 },
+        { title: "Next.js", icon: "nextdotjs", color: "#000000", level: 95 },
+        { title: "React", icon: "react", color: "#61DAFB", level: 95 },
+        { title: "Node.js", icon: "nodedotjs", color: "#339933", level: 85 },
+        { title: "Express", icon: "express", color: "#000000", level: 85 },
+        { title: "Flask", icon: "flask", color: "#000000", level: 80 },
+        { title: "Django", icon: "django", color: "#092E20", level: 75 },
+        { title: "FastAPI", icon: "fastapi", color: "#009688", level: 80 },
         {
             title: "Tailwind CSS",
             icon: "tailwindcss",
             color: "#06B6D4",
+            level: 90,
+        },
+        { title: "Bootstrap", icon: "bootstrap", color: "#7952B3", level: 85 },
+        { title: "MongoDB", icon: "mongodb", color: "#47A248", level: 80 },
+        {
+            title: "PostgreSQL",
+            icon: "postgresql",
+            color: "#4169E1",
             level: 85,
         },
-        { title: "Node.js", icon: "nodedotjs", color: "#339933", level: 70 },
-        { title: "Express", icon: "express", color: "#000000", level: 70 },
-        { title: "Flask", icon: "flask", color: "#000000", level: 75 },
-        { title: "Django", icon: "django", color: "#092E20", level: 70 },
-        { title: "Next.js", icon: "nextdotjs", color: "#000000", level: 90 },
-        { title: "React", icon: "react", color: "#61DAFB", level: 95 },
-        { title: "", icon: "", color: "", level: 0 },
+        { title: "Prisma", icon: "prisma", color: "#2D3748", level: 85 },
     ],
     References: {
         Projects: [
@@ -136,7 +155,7 @@ const home = {
             {
                 title: "PinSightful",
                 description:
-                    "CaseStudy about website PinSightful is an AI-enhanced web application that provides a pinboard-style visualization platform for researchers, educators, and knowledge workers to organize, curate, and share research materials, integrating AI models for content generation, summarization, and analysis.",
+                    "AI-enhanced web application with pinboard-style visualization for researchers and educators. Integrated ChatGPT and Ollama via LangChain for content generation, summarization, and analysis. Built with Next.js, Express, and MongoDB with 99% uptime.",
                 image: "https://gist.github.com/assets/51880648/fbc24429-e714-413d-b313-aa949bf8e65b.png",
                 preview:
                     "https://gist.github.com/assets/51880648/ec62827d-c3e8-437c-880e-eccd781a043a.mp4",
